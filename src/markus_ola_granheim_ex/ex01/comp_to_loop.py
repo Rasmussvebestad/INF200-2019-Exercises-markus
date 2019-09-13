@@ -1,5 +1,3 @@
-n = 10
-
 
 def comp_by_loop(n):
     new_list = []
