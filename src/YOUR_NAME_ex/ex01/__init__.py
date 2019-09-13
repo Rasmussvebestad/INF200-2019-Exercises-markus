@@ -1,3 +1,3 @@
-"author: Markus Ola Granheim"
-
-"mail: mgranhei@nmbu.no"
+"""author: Markus Ola Granheim
+mail: mgranhei@nmbu.no
+"""

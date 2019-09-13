@@ -5,7 +5,7 @@ def comp_by_loop(n):
         if k % 3 == 1:
             new_list.append(n[k] ** 2)
 
-    return (new_list)
+    return new_list
 
 
 def squares_by_comp(n):

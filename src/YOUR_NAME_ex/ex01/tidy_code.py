@@ -5,17 +5,21 @@ Der du får flere poeng desto færre forsøk du bruker.
 """
 from random import randint as a
 
+
 def your_guess():
     c = 0
     while c < 1:
         c = int(input('Your guess: '))
     return c
 
+
 def sum_of_dices():
     return a(1, 6) + a(1, 6)
 
+
 def if_correct_guess(f, g):
     return f == g
+
 
 if __name__ == '__main__':
     checking_answer = False  # checking if wrong answer
@@ -33,3 +37,5 @@ if __name__ == '__main__':
         print('You won {} points.'.format(number_of_tries))
     else:
         print('You lost. Correct answer: {}.'.format(correct_answer))
+
+
