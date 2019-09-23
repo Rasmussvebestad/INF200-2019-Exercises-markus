@@ -3,7 +3,7 @@ Koden kaster to terninger (summerer to tilfeldige verdier mellom 1 og 6).
 Såhar du tre forsøk på å gjette verdien.
 Der du får flere poeng desto færre forsøk du bruker.
 """
-from random import randint as a
+from random import randint
 
 
 def your_guess():
@@ -14,7 +14,7 @@ def your_guess():
 
 
 def sum_of_dices():
-    return a(1, 6) + a(1, 6)
+    return randint(1, 6) + randint(1, 6)
 
 
 def if_correct_guess(f, g):
