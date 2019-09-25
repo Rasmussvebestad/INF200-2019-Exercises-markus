@@ -2,8 +2,7 @@ def char_counts(textfilename):
 
     with open(textfilename, 'r', encoding='utf-8') as textfile:
         ordliste = [ord(i) for i in textfile.read()]
-        results = [0 for i
-                   in range(256)]
+        results = [0 for i in range(256)]
         for i in ordliste:
             results[i] += 1
     return results
