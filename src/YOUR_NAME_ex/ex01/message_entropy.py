@@ -1,7 +1,12 @@
+import collections
+import math as m
+
+
 def letter_freq(txt):
     streng = txt.lower()
     streng = ''.join(sorted(streng))
     tekst = collections.OrderedDict()
+
     for symbol in streng:
         if symbol in tekst:
             tekst[symbol] += 1
@@ -9,20 +14,16 @@ def letter_freq(txt):
             tekst[symbol] = 1
     return tekst
 
-import math as m
 
-def entropy(text = input('Please enter text to analyse: ')):
-
+def entropy(text=input('Please enter text to analyse: ')):
     tekst = letter_freq('message')
     dict_keys = list(tekst.values())
-    N = len(text)
-    sum = 0
+    n = len(text)
+    totalt = 0
 
     for i in range(len(dict_keys)):
-        sum += ((dict_keys[i]/N) * m.log2(dict_keys[i] / N))
+        totalt += ((dict_keys[i] / n) * m.log2(dict_keys[i] / n))
+
+    return totalt
 
     pass
-    return(sum)
-
-
-
