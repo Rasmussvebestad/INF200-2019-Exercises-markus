@@ -1,4 +1,9 @@
 def char_counts(textfilename):
+    with open(textfilename, 'r',encoding = 'utf-8') as textfile:
+        char_string = textfile.read()
+
+        ord(i) for i in textfile
+
 
     pass
 
