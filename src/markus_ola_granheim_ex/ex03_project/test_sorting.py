@@ -5,8 +5,8 @@ __email__ = 'mgranhei@nmbu.no'
 
 # Task A
 
-def bubble_sort(data):
 
+def bubble_sort(data):
     data = list(data)
     length = len(data) - 1
     for i in range(length):
@@ -16,13 +16,13 @@ def bubble_sort(data):
     return data
 
 
-    def test_empty():
-        assert bubble_sort([]) = []
+def test_empty():
+    assert bubble_sort([]) == []
+
 
 def test_single():
-    for a in [1,'alt',1.2341]:
-        assert bubble_sort([a]) == a
-
+    for a in [1, 'alt', 3.1234]:
+        assert bubble_sort([a]) == [a]
 
 
 def test_sorted_is_not_original():
