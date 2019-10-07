@@ -28,7 +28,7 @@ def test_single():
 def test_sorted_is_not_original():
     data = [3, 2, 1]
     sorted_data = bubble_sort(data)
-    assert sorted_data != data
+    assert sorted_data is not data
 
 
 def test_original_unchanged():
@@ -52,7 +52,7 @@ def test_sort_reversed():
 def test_sort_all_equal():
     data = [1, 1, 1, 1, 1]
     sorted_data = bubble_sort(data)
-    assert sorted_data == data
+    assert sorted_data == [1, 1, 1, 1, 1]
 
 
 def test_sorting():
